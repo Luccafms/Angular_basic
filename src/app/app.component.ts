@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aulaangular';
+  title = 'Angular 10';
+  nome = '';
+  vetor = ['Tv', 'Cadeira', 'Sofá', 'Mesa', 'Celular']
+
+  add(){
+    let n = this.nome;
+    this.vetor.push(n);
+    this.nome = '';
+  }
+
+
 }
